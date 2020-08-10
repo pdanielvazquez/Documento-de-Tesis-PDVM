@@ -1,0 +1,17 @@
+\renewcommand\abstractname{Resumen}
+
+\begin{abstract}
+Un repositorio institucional (RI) es un espacio que almacena y preserva la producción
+académica, científica y de innovación; apoya la gestión, preservación, catalogación, consulta e intercambio. Si bien algunos repositorios institucionales (RIs) cuentan con servicios tipo REST\footnote{\textit{Representational State Transfer}, transferencia del estado representacional}, el grado de complejidad en sus consultas considera un solo atributo, lo cual restringe al tipo de información que puede recuperarse.\newline
+
+Este proyecto propone la implementación de un servicio web para recuperar información semántica del RI de la Universidad Politécnica de Puebla (RI-UPPue), los datos del repositorio relacionados con la organización de los contenidos, los usuarios y relaciones entre sí, están almacenados en una ontología, derivada de la descrita en \cite{representacionSemantica}. La ontología es una representación formal que puede ser procesada por la computadora y por las personas, implica una taxonomía, restricciones y reglas en los datos, permite además la validación automática de consistencia lógica.\newline
+
+El servicio web propuesto pretende ser un punto de partida para explorar información semántica del RI-UPPue. Se considera extender las búsquedas que actualmente ofrece el RI-UPPue al implementar búsquedas avanzadas que utilicen dos o más metadatos, operadores lógicos, extracción de esquemas en formato RDF y JSON, unión de esquemas de metadatos que establezcan dominios comunes entre RIs y la posibilidad de gestionar datos abiertos enlazados (DAE) \cite{lodTheEssentials} .\newline
+
+En el documento, se describe el contexto del servicio web propuesto y sus requerimientos desde la perspectiva de administradores o responsables, como en \cite{DSpaceRef} . Posteriormente, se utilizan herramientas de diseño UML como diagramas de clases y casos de uso para lograr obtener un diseño robusto, funcional y adaptado a las necesidades del software que se construirá en las fases subsecuentes. Se propone una arquitectura flexible que permita integrar otros servicios o soluciones similares. Finalmente, mediante el lenguaje de programación python se desarrolla el servicio web y se llevan a cabo sus pruebas de implementación, de lo cual derivan las conclusiones finales.\newline
+
+\begin{keywords}
+    Repositorio Institucional, RDF, JSON, OWL, Python, Servicio Web, DSpace, Ontología.
+\end{keywords}
+
+\end{abstract}

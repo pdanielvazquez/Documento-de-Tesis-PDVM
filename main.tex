@@ -1,0 +1,116 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% File: main.tex
+%% Author: John Liaperdos (ioannis.liaperdos@gmail.com)
+%%Edited by: Jordi Jaromil Cruz- %%Medrano(jordi.cruz@uppuebla.edu.mx)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[modern,hyperref,histinit,frontispiece]{teipel-thesis-en}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\definecolor{uppue}{HTML}{330033}
+\graphicspath{{figures/}}
+\usepackage{appendix}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% QUITE EL % A  LA ESPECIALIDAD QUE PERTENEZCA, LOS OTROS DEBERÁN DE TENER EL %  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\DepartmentName{Maestría en Ingenería en Sistemas y Cómputo Inteligente}
+	%\DepartmentName{Maestría en Ingeniería en Automatización de Procesos Industriales}
+    	%\DepartmentName{Maestría en Ingeniería en Diseño de Bioprocesos}
+        	%\DepartmentName{Maestría en Gestión e Innovación Tecnológica}
+            	%\DepartmentName{Maestría en Enseñanza de las Ciencias}
+                %\DepartmentName{Maestría en Gestión e Innovación Tecnológica}
+%\DepartmentName{Maestría en Enseñanza de las Ciencias}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CAMBIAR POR TUS DATOS 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Titulo de la tesis  
+	\title{Servicio web para la extracción de información semántica del RI-UPPue}
+% Nombre de quien realizo la tesis 
+	\authorName{Ing. Paulo Daniel Vázquez Mora}
+%Director de la tesis 
+    \supervisor{Dra. María Auxilio Medina Nieto}
+%Co-director de la tesis 
+    \cosupervisor{Dra. Mireya Vidal Tovar}
+% Lugar y fecha de la presentación de la tesis
+	\thesisPlaceDate{Juan C. Bonilla, Puebla, Mexico, Diciembre 2019.}
+%Fecha del examen 
+    \examinationDate{12 de Diciembre de 2019}
+%Nombre del primer sinodal
+    \firstExaminer{M.C. Rebeca Rodr\'iguez Huesca}
+%Nombre del segundo sinodal   
+    \secondExaminer{M.C. Antonio Felipe Razo Rodr\'iguez}
+ %agradecimientos a Conacyt colocar  no .de beca    
+    \setFrontispiece[0.3]{figures/Conacyt.jpg}{El presente trabajo fue realizado en el Laboratorio de Investigación y Posgrado del Departamento de computo de la Universidad Politécnica de Puebla, ubicada en Tercer carril del Ejido "Serrano" S/N, San Mateo Cuanalá, Municipio Juan C. Bonilla, Puebla // CP 72640.
+     Apoyo del CONACYT, Beca No. 863914, Programa de Maestría perteneciente al Programa Nacional de Posgrados de Calidad (PNPC-CONACYT)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% NO CAMBIAR 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% University Name
+	\UniversityName{Universidad Politécnica de Puebla}
+% Location
+	\UniversityLocation{Juan C. Bonilla, Puebla, Mexico}
+  	
+    \ThesisType{TESIS QUE PARA OBTENER EL GRADO DE }
+
+	\approvalStatement{}
+
+	\copyrightYear{2030}
+	\chaptercolor{uppue}
+	\appendixcolor{uppue}
+ 	\hyperlinkcolor{blue}    				         \titlecolor{white}
+    \titlebackgroundcolor{uppue}  
+	\UniversityLogoPath{logo/uppue2.png}
+	\UniversityBWLogoPath{logo/uppue2.png}
+	\LogoScaleFactor{1}
+
+
+
+	
+
+\begin{document}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\maketitle
+	
+% Abstract (content in `abstract.tex')
+	\include{abstract}
+% Acknowledgements (content in `acknowledgements.tex')
+    \include{acknowledgements}
+% Table of Contents
+\renewcommand{\contentsname}{Contenido}
+  \tableofcontents 
+% List of Figures
+\renewcommand{\listfigurename}{Lista de Figuras}
+	\listoffigures
+% List of Illustrations
+	%\listofillustrations
+% List of Tables
+\renewcommand{\listtablename}{Lista de Tablas}
+	\listoftables	
+\beginmainmatter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% INCLUDE YOUR CHAPTERS/SECTIONS HERE
+%%
+% Introduction
+	
+% Parts/Chapters
+\renewcommand{\partname}{Capitulo}
+
+	\part{Planteamiento del problema de investigación}
+	\include{Planteamiento}
+    \part{Marco teórico}
+	\include{MarcoTeorico}
+    \part{Metodología} 
+	\include{Metodologia}
+    \part{Resultados} 
+	\include{Resultados}
+     \part{Conclusiones} 
+	\include{Conclusiones}
+    \renewcommand{\bibname}{Bibliografía}
+    \bibliography{IEEEabrv,references}
+    \part{Anexo I}
+    \include{AnexoI}
+
+\end{document}
+
+\appendix
